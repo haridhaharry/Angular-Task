@@ -1,0 +1,38 @@
+
+.outerlayer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+  .rectangle-box {
+    width: 300px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+  }
+
+  .dsplyouter {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-height: 50px;
+  }
+  
+  .keyalign {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 2px;
+    margin-bottom: 2px;
+    margin-right: 4px;
+
+    button {
+    border-radius: 3px;
+    border: none;
+    background-color: #dcdcdc;
+    }
+  }
+
+}

@@ -1,0 +1,17 @@
+<div class="outerlayer">
+<mat-card class="rectangle-box h-auto">
+  <mat-card-title>Calculator</mat-card-title>
+  <mat-card-content class="mt-2">
+    <div class="row dsplyouter me-0 mb-2 overflow-x-auto">
+      <span class="justify-content-end d-flex">{{displayval}}</span>
+      <span class="justify-content-end d-flex">{{calcval}}</span>
+    </div>
+    <div class="row keyalign">
+      <button *ngFor="let item of items" (click)="OnDisplay(item)">
+        <mat-icon *ngIf="item === 'backspace'">{{item}}</mat-icon>
+        <span *ngIf="item !== 'backspace'">{{item}}</span>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>
+</div>
