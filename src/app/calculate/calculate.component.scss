@@ -19,6 +19,13 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     min-height: 50px;
+    .inputalign {
+      height: 26px;
+      background-color: #f0f0f0;
+      border: none;
+      text-align: right;
+      outline: none;
+    }
   }
   
   .keyalign {

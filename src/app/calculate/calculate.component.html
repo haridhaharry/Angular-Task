@@ -3,7 +3,8 @@
   <mat-card-title>Calculator</mat-card-title>
   <mat-card-content class="mt-2">
     <div class="row dsplyouter me-0 mb-2 overflow-x-auto">
-      <span class="justify-content-end d-flex">{{displayval}}</span>
+      <input class="inputalign" type="text" [(ngModel)]="displayval" (keydown)="onKeyPress($event)">
+      <!-- <span>{{displayval}}</span> -->
       <span class="justify-content-end d-flex">{{calcval}}</span>
     </div>
     <div class="row keyalign">
