@@ -39,14 +39,12 @@ onKeyPress(event: KeyboardEvent) {
 }
 
 OnDisplay(clckval: string){
-  const expression = this.calcval;
   if(this.displayval.length >= 20) {
       this.displayval = this.displayval.slice(0, 20);
   }
   const arthval = ['+', '-', '*', '/', '%'];
   this.operator_1 = arthval.some(arth => clckval.includes(arth));
     if(this.operator_1) {
-      // this.displayval.length.includes(arthval);
       this.operator_2 = arthval.some(arth => this.displayval.slice(-1).includes(arth));
       if (this.operator_2) {
         return;
